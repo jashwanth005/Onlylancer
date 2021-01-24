@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnlyLance.com</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/fa9b4ee2dc.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="navigaiton">
+        <div class="img-head">
+            <img src="weg.jpg" alt="OL">
+            <span>OnlyLance</span>
+        </div>
+        <form action="#" class="search">
+            <input type="text" placeholder="  Search...">
+        </form>
+        <div class="vl2"></div>
+        <div class="user-container">
+            <i class="fas fa-sign-out-alt"></i>
+            <span>Logout</span>
+        </div>
+        <div class="side-menu">
+            <div>
+                <ul><a href="#"><i class="fas fa-home" id="icon"></i>Home</a></ul>
+            </div>
+            <div>
+                <ul><a href="#"><i class="fas fa-phone-volume" id="icon"></i>Contact Us</a></ul>
+            </div>
+            <div>
+                <ul><a href="#"><i class="fas fa-cog" id="icon"></i>Settings</a></ul>
+            </div>
+            <div>
+                <ul><a href="#"><i class="fas fa-blog" id="icon"></i>Blog</a></ul>
+            </div>
+        </div>
+    </header>
+    <div class="toggle" onclick="togglemenu()">Menu</div>
+    <script type="text/javascript">
+        function togglemenu() {
+            let nav = document.querySelector('.side-menu');
+            let toggle = document.querySelector('.toggle');
+            nav.classList.toggle('active');
+            toggle.classList.toggle('active');
+        }
+    </script>
+    <div class="vl1"></div>
+</body>
+</html>
